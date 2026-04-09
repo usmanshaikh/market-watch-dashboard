@@ -1,0 +1,56 @@
+.raw-section {
+  margin-top: 4px;
+}
+
+.rv-container {
+  background: var(--bg-base);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 12px 14px;
+  font-size: 11px;
+  line-height: 1.8;
+  overflow-x: auto;
+}
+
+.rv-block {
+  margin: 1px 0;
+}
+
+.rv-row {
+  display: flex;
+  gap: 6px;
+  align-items: baseline;
+}
+
+.rv-children {
+  padding-left: 16px;
+  border-left: 1px solid var(--border);
+  margin-left: 4px;
+}
+
+.rv-key {
+  color: var(--blue);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.rv-bracket {
+  color: var(--text-muted);
+}
+
+.rv-value {
+  &.rv-number {
+    color: var(--green);
+  }
+  &.rv-string {
+    color: var(--amber);
+  }
+  &.rv-boolean {
+    color: #c678dd;
+  }
+}
+
+.rv-null {
+  color: var(--text-muted);
+  font-style: italic;
+}

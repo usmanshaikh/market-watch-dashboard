@@ -1,0 +1,104 @@
+.ticker-badge {
+  display: inline-block;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 2px 7px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--blue);
+  letter-spacing: 0.5px;
+
+  &.small {
+    font-size: 10px;
+    padding: 1px 5px;
+  }
+}
+
+.name-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+
+  .name {
+    font-size: 12px;
+    color: var(--text-primary);
+  }
+  .sector-tag {
+    font-size: 10px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+}
+
+.price-cell {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.change-cell {
+  font-size: 12px;
+  font-weight: 600;
+
+  &.positive {
+    color: var(--green);
+  }
+  &.negative {
+    color: var(--red);
+  }
+}
+
+.status-dot {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 20px;
+
+  &::before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+  }
+
+  &.open {
+    background: var(--green-dim);
+    color: var(--green);
+    &::before {
+      background: var(--green);
+    }
+  }
+
+  &.closed {
+    background: rgba(100, 100, 100, 0.1);
+    color: var(--text-muted);
+    &::before {
+      background: var(--text-muted);
+    }
+  }
+}
+
+.watchlist-btn {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 16px;
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 4px;
+  transition:
+    color 0.15s,
+    background 0.15s;
+
+  &:hover {
+    color: var(--amber);
+    background: rgba(245, 158, 11, 0.1);
+  }
+  &.added {
+    color: var(--amber);
+  }
+}

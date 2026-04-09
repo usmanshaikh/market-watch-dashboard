@@ -1,0 +1,68 @@
+import type { Instrument } from '../types';
+
+export const initialInstruments: Instrument[] = [
+  {
+    id: 'AAPL',
+    name: 'Apple Inc.',
+    sector: 'Technology',
+    price: 189.12,
+    change: 1.24,
+    currency: 'USD',
+    marketStatus: 'Open',
+    tags: ['Large Cap', 'US', 'Equity'],
+    metrics: {
+      peRatio: 29.1,
+      marketCap: '2.9T',
+      volume: 52340000,
+    },
+    history: [186.1, 187.4, 188.2, 187.8, 189.12],
+  },
+  {
+    id: 'TSLA',
+    name: 'Tesla Inc.',
+    sector: 'Automotive',
+    price: 171.45,
+    change: -2.73,
+    currency: 'USD',
+    marketStatus: 'Open',
+    tags: ['Growth', 'US', 'Equity'],
+    metrics: {
+      peRatio: 52.6,
+      marketCap: '550B',
+      volume: 34120000,
+    },
+    history: [176.4, 174.9, 173.2, 172.8, 171.45],
+  },
+  {
+    id: 'INFY',
+    name: 'Infosys',
+    sector: 'Technology',
+    price: 18.22,
+    change: 0.32,
+    currency: 'USD',
+    marketStatus: 'Closed',
+    tags: ['India', 'ADR', 'IT Services'],
+    metrics: {
+      peRatio: 24.3,
+      marketCap: '75B',
+      volume: 4200000,
+    },
+    history: [17.8, 17.9, 18.0, 18.1, 18.22],
+  },
+  {
+    id: 'BTC-USD',
+    name: 'Bitcoin',
+    sector: 'Crypto',
+    price: 68250,
+    change: 3.8,
+    currency: 'USD',
+    marketStatus: 'Open',
+    tags: ['Crypto', '24x7', 'Digital Asset'],
+    metrics: {
+      peRatio: null,
+      marketCap: '1.3T',
+      volume: 9200000,
+    },
+    history: [66100, 66800, 67120, 67600, 68250],
+  },
+];

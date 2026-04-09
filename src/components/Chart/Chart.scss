@@ -1,0 +1,42 @@
+.chart-status {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 12px;
+}
+
+.icon {
+  margin-right: 5px;
+}
+
+.chart-bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 6px;
+  height: 100px;
+}
+
+.bar-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.bar {
+  width: 30px;
+  border-radius: 3px;
+}
+
+.label {
+  font-size: 10px;
+  color: #7a8fa8;
+}
+
+.chart-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  font-size: 11px;
+  color: #7a8fa8;
+}
