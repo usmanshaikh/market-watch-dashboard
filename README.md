@@ -2,14 +2,20 @@
 
 A real-time financial instrument dashboard built with React, TypeScript, and Vite.
 
+---
+
 ## How to Run
 
-git clone [<repo-url>](https://github.com/usmanshaikh/market-watch-dashboard)
-cd market-dashboard
+```bash
+git clone https://github.com/usmanshaikh/market-watch-dashboard
+cd market-watch-dashboard
 npm install
 npm run dev
+```
 
-Open http://localhost:5173
+Open [http://localhost:5173](http://localhost:5173)
+
+---
 
 ## Architecture Overview
 
@@ -66,9 +72,13 @@ src/
 └── main.tsx                     # App entry point
 ```
 
+---
+
 ### Screenshot
 
 ![App Screenshot](./screenshot.png)
+
+---
 
 ### State Management
 
@@ -78,6 +88,8 @@ src/
   that needs to survive across components
 - Watchlist is persisted to localStorage automatically
 
+---
+
 ### Real-Time Updates
 
 - setInterval fires every 2 seconds
@@ -85,6 +97,8 @@ src/
 - setState updater is kept pure - no side effects inside
 - Redux sync happens in a separate useEffect watching instruments
 - clearInterval cleanup runs on unmount
+
+---
 
 ### Performance
 
@@ -94,6 +108,8 @@ src/
   whose props don't change on price ticks
 - shallowEqual in Watchlist useSelector to avoid extra renders
 
+---
+
 ## Assumptions Made
 
 - Mock data is treated as the live data source - no backend needed
@@ -101,6 +117,8 @@ src/
 - Closed markets (INFY) intentionally receive no price updates
 - Watchlist persists in localStorage across page refreshes
 - Chart shows last 5 price points only - sufficient for trend view
+
+---
 
 ## Improvements With More Time
 
@@ -118,3 +136,5 @@ src/
    using React Router
 7. Accessibility - aria-labels, focus management, screen reader support
 8. Error boundary
+
+---
