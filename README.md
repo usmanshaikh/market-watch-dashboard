@@ -4,7 +4,7 @@ A real-time financial instrument dashboard built with React, TypeScript, and Vit
 
 ## How to Run
 
-git clone <repo-url>
+git clone [<repo-url>](https://github.com/usmanshaikh/market-watch-dashboard)
 cd market-dashboard
 npm install
 npm run dev
@@ -65,6 +65,10 @@ src/
 ├── index.scss                   # Base styles
 └── main.tsx                     # App entry point
 ```
+
+### Screenshot
+
+![App Screenshot](./screenshot.png)
 
 ### State Management
 
