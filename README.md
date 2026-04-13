@@ -1,5 +1,7 @@
 # Market Watch - Real-Time Market Dashboard
 
+## 🚀 **[Live App:](https://usmanshaikh.github.io/market-watch-dashboard/)**
+
 A real-time financial instrument dashboard built with React, TypeScript, and Vite.
 
 ---
